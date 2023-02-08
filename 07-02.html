@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>07/02</title>
+    <style>
+      .tela-cheia {
+        background: rgb(231, 231, 231);
+        height: 100vh; /* 100vh é equivalente a 100% da altura vertical da tela */
+      }
+
+      .negrito {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Menu</h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section id="sobre" class="tela-cheia">
+      <h2>Sobre</h2>
+      <p class="negrito">Texto de sobre aqui.</p>
+    </section>
+
+    <section id="tecnologias" class="tela-cheia">
+      <h2>Tecnologias</h2>
+      <p class="negrito">Texto de tecnologias aqui.</p>
+    </section>
+
+    <section id="contato" class="tela-cheia">
+      <h2>Contato</h2>
+      <p class="negrito">Texto de contato aqui.</p>
+
+      <form action="">
+        <label>
+          Seu nome
+          <input type="text" placeholder="Digite o seu nome aqui" />
+        </label>
+        <label for="nome"> Seu nome </label>
+        <input type="text" id="nome" placeholder="Digite o seu nome aqui" />
+
+        <input type="button" value="Outro tipo de botão" />
+        <button type="submit">Enviar</button>
+        <button type="button">Resetar</button>
+      </form>
+    </section>
+  </body>
+</html>
