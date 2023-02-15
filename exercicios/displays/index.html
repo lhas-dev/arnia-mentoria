@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício de displays no CSS</title>
+    <style>
+      .exemplo {
+        background: #ccc;
+        border: 1px solid #000;
+      }
+
+      .block {
+        display: block;
+        background: red;
+      }
+
+      .inline-block {
+        display: inline-block;
+        background: green;
+      }
+
+      .inline {
+        display: inline;
+        width: 600px;
+        background: yellow;
+      }
+
+      .none {
+        display: none;
+      }
+
+      .testimonial {
+        border: 1px solid #222;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0px 0px 4px #222;
+      }
+
+      .testimonial-image {
+        border-radius: 50px;
+        margin-right: 20px;
+      }
+
+      .testimonial-text {
+        display: inline;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Displays</h1>
+    <ul>
+      <li>
+        <p>
+          <strong>block</strong>: O display block é um tipo de display que faz
+          com que o elemento seja carregado como um bloco (pense em um parágrafo
+          feito com
+        </p>
+        <p>
+          ). Ele inícia sempre em uma nova linha, e a largura desse elemento
+          automaticamente é preenchida com todo o tamanho disponível.
+        </p>
+        <div class="exemplo">
+          <div class="block">conteúdo do block aqui</div>
+          <p>conteúdo de um paráfrago aleatório aqui</p>
+        </div>
+      </li>
+      <li>
+        <p>
+          <strong>inline-block</strong>: O display inline-block é um tipo de
+          display que faz com que o elemento seja carregado numa mesma linha. O
+          elemento por si só é formatado em uma única linha. No inline-block, as
+          larguras e alturas (width e height) são respeitadas.
+        </p>
+        <div class="exemplo">
+          <div class="inline-block">conteúdo do inline-block aqui</div>
+          <div class="inline-block">conteúdo do inline-block aqui</div>
+          <div class="block">conteúdo do block aqui</div>
+          <div class="inline-block">conteúdo do inline-block aqui</div>
+          <p>conteúdo de um paráfrago aleatório aqui</p>
+        </div>
+      </li>
+      <li>
+        <p>
+          <strong>inline</strong>: O inline é um tipo de display que permite
+          renderizar elementos numa única linha. A diferença dele para o
+          inline-block é que características como largura e altura não o afetam.
+          No inline, as larguras e alturas (width e height) são completamente
+          ignoradas.
+        </p>
+        <div class="exemplo">
+          <div class="inline-block">conteúdo do inline-block aqui</div>
+          <div class="inline">conteúdo do inline aqui</div>
+          <div class="inline">conteúdo do inline aqui</div>
+          <div class="inline">conteúdo do inline aqui</div>
+          <div class="inline">conteúdo do inline aqui</div>
+          <div class="block">conteúdo do block aqui</div>
+          <div class="inline-block">conteúdo do inline-block aqui</div>
+          <p>conteúdo de um paráfrago aleatório aqui</p>
+        </div>
+      </li>
+      <li>
+        <p>
+          <strong>none</strong>: O display none é um tipo de display que
+          simplesmente OCULTA o elemento da tela. A largura e a altura do seu
+          conteúdo deixam de ser exibidos. Ou seja, um elemento com este tipo de
+          display, é simplesmente ignorado pelo navegador.
+        </p>
+        <div class="exemplo">
+          <div class="inline-block">conteúdo do inline-block aqui</div>
+          <div class="inline">conteúdo do inline aqui</div>
+          <div class="inline">conteúdo do inline aqui</div>
+          <div class="inline">conteúdo do inline aqui</div>
+          <div class="inline">conteúdo do inline aqui</div>
+          <div class="block">conteúdo do block aqui</div>
+          <div class="none">conteúdo none</div>
+          <div class="inline-block">conteúdo do inline-block aqui</div>
+        </div>
+      </li>
+      <li></li>
+    </ul>
+
+    <h1>Exemplo de depoimento</h1>
+
+    <div class="testimonial">
+      <img
+        src="https://picsum.photos/200"
+        width="40"
+        height="40"
+        alt="John Galt"
+        class="testimonial-image"
+      />
+      <p class="testimonial-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+        perferendis hic quo suscipit ipsa placeat magni molestias eius,
+        excepturi quidem voluptas natus error aperiam dolores harum! Nesciunt
+        autem rerum harum.
+      </p>
+    </div>
+  </body>
+</html>
