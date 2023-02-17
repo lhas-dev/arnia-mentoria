@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu de Hambúrguer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      }
+
+      button {
+        background: #fff;
+        border: none;
+        padding: 10px;
+        transform: rotate(90deg);
+        border-radius: 6px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+      }
+
+      nav {
+        width: 100%;
+      }
+
+      nav.hide {
+        display: none;
+      }
+
+      nav.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav.show a {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #222;
+        padding: 10px;
+        border: 1px solid #222;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>JoãoTec</h1>
+      <button>|||</button>
+      <nav class="hide">
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+    <script type="text/javascript">
+      var menuExpandido = true;
+
+      document.querySelector("button").onclick = function () {
+        document.querySelector("nav").className = menuExpandido
+          ? "hide"
+          : "show";
+
+        menuExpandido = !menuExpandido;
+      };
+    </script>
+  </body>
+</html>

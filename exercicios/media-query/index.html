@@ -1,0 +1,56 @@
+<!--
+    A ideia do nosso exercício é fazer uma página que seja mobile first.
+
+    Nossa página terá 1 retângulo que deverá ser exibido da seguinte maneira:
+
+    a) Dispositivos móveis: Deverá ter um fundo vermelho e texto grande (21px); OK
+    b) Dispositivos tablet: Deverá ter um fundo verde e texto médio (18px); OK
+    c) Dispositivos desktop: Deverá ter um fundo amarelo e texto pequeno (16px).
+
+    Nossa página deverá ter 1 estilização própria para quando estiver no modo de impressão (print):
+
+    a) O retângulo deverá ter fundo rosa;
+    b) O retângulo deverá ter o texto em negrito.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      .rectangle {
+        background: red;
+        font-size: 21px;
+      }
+
+      @media screen and (min-width: 768px) {
+        .rectangle {
+          background: green;
+          font-size: 18px;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .rectangle {
+          background: yellow;
+          font-size: 16px;
+        }
+      }
+
+      @media print {
+        .rectangle {
+          background: red !important;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Queries</h1>
+    <div class="rectangle">
+      <p>Retângulo</p>
+    </div>
+  </body>
+</html>
