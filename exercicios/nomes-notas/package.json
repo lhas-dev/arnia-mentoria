@@ -1,0 +1,6 @@
+{
+  "name": "nomes-notas",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
